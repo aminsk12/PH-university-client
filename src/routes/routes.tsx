@@ -4,8 +4,8 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import { adminPaths } from "./admin.routes";
 import { routesGenerator } from "../utils/routesGenerator";
-import { facultyPaths } from "./facuity.route";
-import { studentPaths } from "./student.route";
+import { facultyPaths } from "./facuity.routes";
+import { studentPaths } from "./student.routes";
 
 
 const router = createBrowserRouter([

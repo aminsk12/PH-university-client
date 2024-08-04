@@ -1,8 +1,8 @@
-
 import AdminDashbord from "../pages/admin/AdminDashbord";
 import CreateAdmin from "../pages/admin/CreateAdmin";
 import CreateFaculty from "../pages/admin/CreateFaculty";
 import CreateStudent from "../pages/admin/CreateStudent";
+import AcademicSemester from "../pages/admin/academicManagement/AcademicSemester";
 
 
 // type TRout = {
@@ -20,6 +20,16 @@ export const adminPaths = [
     name: "Dashbord",
     path: "dashbord",
     element: <AdminDashbord></AdminDashbord>,
+  },
+  {
+    name: "Academic Management",
+    children: [
+      {
+        name: "Academic Semester",
+        path: "academic-semesters",
+        element: <AcademicSemester />,
+      }
+    ],
   },
   {
     name: "User Management",
